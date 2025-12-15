@@ -59,7 +59,7 @@ function BreadCrumbs() {
       const crumb = loaderData?.crumb
       return crumb ? { ...crumb, id: match.id } : null
     })
-    .filter((crumb): crumb is { label: string; url: string; id: string } => crumb !== null)
+    .filter(Boolean)
 
   return (
     <Breadcrumb>
