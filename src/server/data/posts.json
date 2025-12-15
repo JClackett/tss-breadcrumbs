@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "title": "Getting Started with TanStack Router",
+    "content": "TanStack Router is a type-safe router for React applications. It provides excellent developer experience with full TypeScript support.",
+    "author": "John Doe",
+    "createdAt": "2024-01-15"
+  },
+  {
+    "id": "2",
+    "title": "Building Modern Web Applications",
+    "content": "Modern web applications require careful consideration of routing, state management, and user experience. Let's explore best practices.",
+    "author": "Jane Smithsss",
+    "createdAt": "2024-01-20"
+  }
+]

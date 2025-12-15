@@ -1,0 +1,99 @@
+{
+  "$schema": "https://biomejs.dev/schemas/latest/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "includes": [
+      "**",
+      "!!**/dist",
+      "!!**/build",
+      "!!**/cache",
+      "!!**/.next",
+      "!!**/node_modules",
+      "!!**/routeTree.gen.ts",
+      "!!**/src/lib/api/schema.d.ts",
+      "!!**/.turbo"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "formatWithErrors": true,
+    "indentWidth": 2,
+    "lineWidth": 130,
+    "lineEnding": "lf"
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
+    },
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "semicolons": "asNeeded",
+      "trailingCommas": "all",
+      "arrowParentheses": "always",
+      "jsxQuoteStyle": "double"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "nursery": {
+        "noFloatingPromises": "error",
+        "useSortedClasses": {
+          "level": "warn",
+          "options": {
+            "attributes": ["className"],
+            "functions": ["cn", "classNames"]
+          },
+          "fix": "safe"
+        }
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "suspicious": {
+        "noConfusingVoidType": "off",
+        "noExplicitAny": "off",
+        "noArrayIndexKey": "off",
+        "noDocumentCookie": "off",
+        "noUnknownAtRules": "off"
+      },
+      "complexity": {
+        "noForEach": "off",
+        "noUselessFragments": "off"
+      },
+      "recommended": true,
+      "correctness": {
+        "noUnusedVariables": "error",
+        "useUniqueElementIds": "off",
+        "noUnusedImports": "error",
+        "useExhaustiveDependencies": "off"
+      },
+      "a11y": {
+        "noAutofocus": "off",
+        "useMediaCaption": "off",
+        "useKeyWithClickEvents": "off",
+        "useSemanticElements": "off",
+        "noLabelWithoutControl": "off",
+        "useFocusableInteractive": "off"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "useImportType": "error",
+        "noUnusedTemplateLiteral": "off",
+        "useTemplate": "off"
+      },
+      "performance": {
+        "noImgElement": "off"
+      }
+    }
+  }
+}

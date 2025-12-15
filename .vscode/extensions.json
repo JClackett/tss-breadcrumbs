@@ -1,0 +1,8 @@
+{
+	"recommendations": [
+		"biomejs.biome",
+		"antfu.file-nesting",
+		"bradlc.vscode-tailwindcss",
+		"naumovs.color-highlight"
+	]
+}
