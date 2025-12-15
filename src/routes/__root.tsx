@@ -52,7 +52,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 }
 
 function BreadCrumbs() {
-  const matches = useMatches()
+  const matches = useMatches({ select: (m) => m.filter((m) => m.loaderData?.crumb) })
   const crumbs = matches
     .map((match) => {
       const loaderData = match.loaderData
