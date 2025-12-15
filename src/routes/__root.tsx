@@ -55,7 +55,7 @@ function BreadCrumbs() {
   const matches = useMatches()
   const crumbs = matches
     .map((match) => {
-      const loaderData = match.loaderData as { crumb?: { label: string; url: string } } | undefined
+      const loaderData = match.loaderData
       const crumb = loaderData?.crumb
       return crumb ? { ...crumb, id: match.id } : null
     })
